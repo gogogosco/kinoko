@@ -318,6 +318,9 @@ public final class AttackHandler {
                 case Aran.OVER_SWING_DOUBLE_SWING, Aran.OVER_SWING_TRIPLE_SWING -> {
                     attack.slv = user.getSkillLevel(Aran.OVER_SWING);
                 }
+                case WildHunter.JAGUAR_OSHI_ATTACK -> {
+                    attack.slv = user.getSkillLevel(WildHunter.JAGUAR_OSHI);
+                }
                 case Mechanic.ENHANCED_FLAME_LAUNCHER -> {
                     attack.slv = user.getSkillLevel(Mechanic.FLAME_LAUNCHER);
                 }
