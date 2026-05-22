@@ -237,7 +237,7 @@ public final class Thief extends SkillProcessor {
                 user.resetTemporaryStat(Set.of(CharacterTemporaryStat.ShadowPartner));
                 return;
             case THORNS:
-                final int thorns = (si.getValue(SkillStat.x, slv) << 8) + si.getValue(SkillStat.criticaldamageMax, slv); // (cr << 8) + cd
+                final int thorns = (si.getValue(SkillStat.x, slv) << 8) + si.getValue(SkillStat.criticaldamageMin, slv); // (cr << 8) + cd
                 user.setTemporaryStat(CharacterTemporaryStat.ThornsEffect, TemporaryStatOption.of(thorns, skillId, si.getDuration(slv)));
                 return;
             case MONSTER_BOMB:
